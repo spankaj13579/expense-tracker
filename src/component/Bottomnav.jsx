@@ -10,9 +10,9 @@ const Bottomnav = () => {
         <BsFillHouseDoorFill />
         <p className="text-sm">Dashboard</p>
       </div>
-      <div className="bg-red-600 absolute left-1/2 top-1/4 transform -translate-x-1/2 -translate-y-1/2 text-white p-6 rounded-full border-[12px] border-slate-100">
+      <button className="bg-red-600 absolute left-1/2 top-1/4 transform -translate-x-1/2 -translate-y-1/2 text-white p-6 rounded-full border-[12px] border-slate-100">
         <FaPlus />
-      </div>
+      </button>
       <div className="flex flex-col items-center gap-2 text-red-600">
         <IoMdSettings />
         <p className="text-sm">settings</p>

@@ -7,7 +7,7 @@ import Bottomnav from './Bottomnav'
 
 const Dashbpard = () => {
   return (
-    <div className='container pt-10 h-screen relative flex flex-col justify-between'>
+    <div className='container pt-10 h-[100dvh] relative flex flex-col justify-between'>
       <div className=' px-6'>
         <p className='text-[18px] font-medium text-slate-700 mb-6 flex items-center gap-x-3 justify-between'>Good morning, Helen 
         <span className='flex gap-x-5'>
