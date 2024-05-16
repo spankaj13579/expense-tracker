@@ -28,7 +28,7 @@ const Dashbpard = () => {
         </div>
       </div>
       <div className=' px-6'>
-      <Getstartedexpenseteport />
+      <Getstartedexpenseteport path={'/reportname'} />
       </div>
       <Bottomnav />
     </div>

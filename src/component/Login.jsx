@@ -10,7 +10,7 @@ const Login = () => {
         <p className='text-slate-700 mb-10 text-base font-normal'>Login with your employee ID</p>
         <Textfield label={'Employee ID'} placeholder={'Enter your employee ID'} />
       </div>
-      <ButtonMain content={"Login"}/>
+      <ButtonMain path={'/dashboard'} content={"Login"}/>
     </div>
   )
 }
