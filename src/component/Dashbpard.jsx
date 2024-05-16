@@ -2,7 +2,7 @@ import React from 'react'
 import Textfield from './util/Textfield'
 import ButtonMain from './util/ButtonMain'
 import { BsBell, BsChatDots } from 'react-icons/bs'
-import Getstartedexpenseteport from './Getstartedexpenseteport'
+import Getstartedexpenseteport from './util/Getstartedexpenseteport'
 import Bottomnav from './util/Bottomnav'
 
 const Dashbpard = () => {
