@@ -3,7 +3,7 @@ import Textfield from './util/Textfield'
 import ButtonMain from './util/ButtonMain'
 import { BsBell, BsChatDots } from 'react-icons/bs'
 import Getstartedexpenseteport from './Getstartedexpenseteport'
-import Bottomnav from './Bottomnav'
+import Bottomnav from './util/Bottomnav'
 
 const Dashbpard = () => {
   return (
