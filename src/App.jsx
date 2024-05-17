@@ -7,12 +7,13 @@ import Getstartedexpenseteport from './component/util/Getstartedexpenseteport'
 import Reportname from './component/Reportname'
 import { Route, Routes } from 'react-router-dom'
 import Addexpensemain from './component/Addexpensemain'
+import './index.css'
 
 const App = () => {
   return (
     <div className='bg-slate-100'>
       <Routes >
-        <Route path='/' element={<Welcome />} />
+        <Route path='/' element={<Addexpensemain />} />
         <Route path='/Login' element={<Login />} />
         <Route path='/dashboard' element={<Dashbpard />} />
         <Route path='/reportname' element={<Reportname />} />
