@@ -18,7 +18,7 @@ const App = () => {
         <Route path='/reportname' element={<Reportname />} />
         <Route path='/addexpensemain' element= {<Addexpensemain />} />
       </Routes>
-    </div>
+    </div> 
   )
 }
 
