@@ -1,6 +1,8 @@
 import React from 'react'
 import ButtonMain from './util/ButtonMain'
 import Textfield from './util/Textfield'
+import Category from './util/Category'
+import Buttonsecondary from './util/Buttonsecondary'
 
 const Addexpensemain = () => {
   return (
@@ -16,9 +18,10 @@ const Addexpensemain = () => {
           <Textfield type={'number'} min={0} max= {1000000} label= {'Merchant Name'} />
           <Textfield type={'date'} label= {'enter date'}/>
           <Textfield label={'Description'} placeholder={'Expense Description'}/>
-          
+          <Category />
         </form>
       </div>
+          <Buttonsecondary content= {'Save Expense'} />
     </div>
   )
 }
