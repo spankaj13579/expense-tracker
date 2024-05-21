@@ -12,7 +12,7 @@ const Reportname = () => {
       </div>
       <div>
         <div className='mb-9'>
-          <Buttonsecondary  content={'Add Expense'} />
+          <Buttonsecondary  content={'Add Expense'} path={'/addexpensemain'}/>
         </div>
         <ButtonMain content= {'Submit Expense Report'}/>
       </div>

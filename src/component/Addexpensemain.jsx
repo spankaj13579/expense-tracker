@@ -24,7 +24,7 @@ const Addexpensemain = () => {
         </div>
             <Buttonsecondary content= {'Save Expense'} />
       </form>
-      <Modal_one />
+      {/* <Modal_one /> */}
     </div>
   )
 }

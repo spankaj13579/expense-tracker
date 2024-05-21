@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div className='bg-slate-100 relative'>
       <Routes >
-        <Route path='/' element={<Addexpensemain />} />
+        <Route path='/' element={<Welcome />} />
         <Route path='/Login' element={<Login />} />
         <Route path='/dashboard' element={<Dashbpard />} />
         <Route path='/reportname' element={<Reportname />} />
