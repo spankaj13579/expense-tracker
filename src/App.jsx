@@ -8,10 +8,11 @@ import Reportname from './component/Reportname'
 import { Route, Routes } from 'react-router-dom'
 import Addexpensemain from './component/Addexpensemain'
 import './index.css'
+import Modal from './component/Modal'
 
 const App = () => {
   return (
-    <div className='bg-slate-100'>
+    <div className='bg-slate-100 relative'>
       <Routes >
         <Route path='/' element={<Addexpensemain />} />
         <Route path='/Login' element={<Login />} />

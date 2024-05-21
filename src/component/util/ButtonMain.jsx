@@ -10,7 +10,7 @@ const ButtonMain = ({content,path}) => {
   }
   return (
     <button className='bg-red-400 border-2 border-red-400 p-3.5 rounded-lg w-full text-stone-100 font-semibold'
-    onClick={handleClick}>{content}</button>
+    onClick={handleClick}>{content || 'button'}</button>
   )
 }
 

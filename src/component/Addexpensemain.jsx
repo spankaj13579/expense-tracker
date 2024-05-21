@@ -3,11 +3,12 @@ import ButtonMain from './util/ButtonMain'
 import Textfield from './util/Textfield'
 import Category from './util/Category'
 import Buttonsecondary from './util/Buttonsecondary'
+import Modal from './Modal'
 
 const Addexpensemain = () => {
   return (
-    <div>
-      <form className='container px-6 py-10 h-[100dvh] relative flex flex-col justify-between'>
+    <div className='relative'>
+      <form className='container px-6 py-10 h-[100dvh] relative flex flex-col justify-between gap-y-7'>
         <div>
           <h1 className='text-base font-semibold text-slate-800 mb-3'>Add Expense</h1>
           <p className='text-slate-700 mb-10 text-sm font-normal'>How do you want to input your expense?</p>
@@ -24,6 +25,7 @@ const Addexpensemain = () => {
         </div>
             <Buttonsecondary content= {'Save Expense'} />
       </form>
+      <Modal />
     </div>
   )
 }
