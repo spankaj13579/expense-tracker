@@ -1,9 +1,8 @@
 import React from 'react'
-import ButtonMain from './util/ButtonMain'
 import Textfield from './util/Textfield'
 import Category from './util/Category'
 import Buttonsecondary from './util/Buttonsecondary'
-import Modal from './Modal'
+import Modal_one from './Modal'
 
 const Addexpensemain = () => {
   return (
@@ -25,7 +24,7 @@ const Addexpensemain = () => {
         </div>
             <Buttonsecondary content= {'Save Expense'} />
       </form>
-      <Modal />
+      <Modal_one />
     </div>
   )
 }

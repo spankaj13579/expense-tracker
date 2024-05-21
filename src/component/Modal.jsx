@@ -3,7 +3,7 @@ import Textfield from './util/Textfield';
 import ButtonMain from './util/ButtonMain';
 import { RxCross2 } from 'react-icons/rx';
 
-const Modal = () => {
+const Modal_one = () => {
   return (
     <div className='bg-slate-600 bg-opacity-60 h-full w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-between'>
       <div className='modal-body relative rounded-2xl bg-slate-100 p-5 flex flex-col h-100 justify-between w-11/12 m-auto items-center gap-y-10 '>
@@ -24,4 +24,4 @@ const Modal = () => {
   );
 }
 
-export default Modal;
+export default Modal_one;
