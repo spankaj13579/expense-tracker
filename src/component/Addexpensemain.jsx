@@ -1,10 +1,12 @@
-import React from 'react'
+import React, {useEffect, useState } from 'react'
 import Textfield from './util/Textfield'
 import Category from './util/Category'
 import Buttonsecondary from './util/Buttonsecondary'
 import Modal_one from './Modal'
+import { useActionData } from 'react-router-dom'
 
 const Addexpensemain = () => {
+  
   return (
     <div className='relative'>
       <form className='container px-6 py-10 h-[100dvh] relative flex flex-col justify-between gap-y-7'>
