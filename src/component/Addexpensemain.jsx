@@ -9,10 +9,13 @@ const Addexpensemain = () => {
 
   const [saveExpense, setsaveExpense]=useState({});
   // finction to set expense by drilling it down to the component
-  let setExpense= (e)=>{
+  const setExpense= (e)=>{
     setsaveExpense((prev)=> ({...prev,[e.target.name]: e.target.value}))
     console.log(saveExpense)
   };
+  // const setOption= (e)=>{
+  //   console.log(e.target)
+  // }
 
   return (
     <div className='relative'>
@@ -28,7 +31,7 @@ const Addexpensemain = () => {
             <Textfield onTyping= {setExpense} ipname={'merchant'} type={'number'} min={0} max= {1000000} label= {'Merchant Name'} />
             <Textfield onTyping= {setExpense} type={'date'} label= {'enter date'}/>
             <Textfield onTyping= {setExpense} label={'Description'} ipname={'exp_description'} placeholder={'Expense Description'}/>
-            <Category />
+            <Category onTyping= {setExpense} />
           </div>
         </div>
             <Buttonsecondary content= {'Save Expense'} />
