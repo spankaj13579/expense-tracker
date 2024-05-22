@@ -1,7 +1,16 @@
 import React, { useEffect, useState } from 'react';
 
-const Textfield = ({ type = 'text', label, placeholder, min, max }) => {
+const Textfield = ({ type = 'text', label, ipname, placeholder, onTyping, min, max }) => {
   const [todaysDate, settodaysDate] = useState('');
+
+  // on typing in field
+  const handleInput= (e)=>{
+    onTyping(e)
+  }
+  const  dateChange= (e)=>{
+    settodaysDate(e.target.value)
+    onTyping(e);
+  }
 
   let currentDate= ()=>{
     const date = new Date();
@@ -23,7 +32,9 @@ const Textfield = ({ type = 'text', label, placeholder, min, max }) => {
       </label>
       {type === 'number' ? (
         <input
+          onChange={handleInput}
           type="number"
+          name={ipname}
           placeholder={placeholder || label}
           min={min || 0}
           max={max || 10000000}
@@ -34,12 +45,15 @@ const Textfield = ({ type = 'text', label, placeholder, min, max }) => {
         <input
           type="date"
           value={todaysDate}
-          onChange={(e) => settodaysDate(e.target.value)}
+          name= 'date'
+          onChange={dateChange}
           className="text-slate-800 text-base border-solid border-2 rounded-lg p-3 block w-full font-normal bg-transparent"
         />
       ) : (
         <input
+        onChange={handleInput}
           type="text"
+          name={ipname}
           placeholder={placeholder || label}
           className="text-slate-800 text-base border-solid border-2 rounded-lg p-3 block w-full font-normal bg-transparent"
         />
